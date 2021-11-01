@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.nav{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-color:#35424A;
+    font-size: 1.5rem;
+    padding: 0.75rem;
+    color: white;
+}
+
+nav{
+    border-bottom: 3px solid rebeccapurple;
+}
+
+.bars{
+    margin-right: auto;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.bars span{
+    color:rebeccapurple;
+}
+
+.fa-home{
+    color: rebeccapurple;
+}
+
+main{
+    text-align: center;
+    color: white;
+    background-image: url(./img/showcase.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-position: center;
+    line-height: 4rem;
+}
+main h1{
+    font-size: 4rem;
+}
+main p{
+    font-size: 1.25rem;
+}
+
+a:hover{
+    color:#bb25e9 ;
+    cursor: pointer;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+li {
+    text-align: -webkit-match-parent;
+}
+
+p{
+    display: block;
+    text-align: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; 
+}
+
+main p{
+    font-size: 1.25rem;
+}
+
+#miBar{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color:#35424A;
+    padding: 1rem;
+    color: white;
+    align-items: center;
+}
+
+.miBar-right{
+    width: 30%;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.subbutton{
+    color: white;
+    background-color: #E8491D;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: 8px solid #E8491D;
+    transition: all ease-in-out 200ms;
+}
+
+.subbutton:hover{
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+
+.subinfo{
+    width: 70%;
+    height: 2rem;
+    padding-left: 10px;
+}
+.subinfo:hover{
+    outline: none;
+}
+
+.subinfo:focus::placeholder{
+    color: transparent;
+}
+
+#infoBar{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.divHtml,
+.divCss,
+.divDesign{
+    text-align: center;
+}
+#infoBar img{
+    width: 100px;
+}
+
+#footBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#35424A;
+    color: white;
+    padding: 1.25rem;
+}
+@media screen and (max-width:800px) {
+    .nav {
+        justify-content: space-around;
+    }
+
+    #navbar ul li{
+        font-size: 1.5rem;
+    }
+
+    main h1{
+        font-size:40px;
+    }
+}
